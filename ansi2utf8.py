@@ -25,8 +25,8 @@ def ansi2utf8(data_dir):
     json_file = file_names[0]
 
 
-with open(os.path.join(data_dir,"utf8",json_file), "r",encoding='utf-8') as f:
-    info = json.load(f)
+    with open(os.path.join(data_dir,"utf8",json_file), "r",encoding='utf-8') as f:
+        info = json.load(f)
 
 if __name__ == "__main__":
     # this action will transfer all the ansi encoded json file which under data_dir folder into utf-8 format
